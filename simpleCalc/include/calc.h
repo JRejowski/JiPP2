@@ -1,7 +1,7 @@
 
 int add(int a, int b);
-int subb(int a, int b);
-double volume(double base_field, double height);
+int subtract(int a, int b);
+double volume(double base_field, double h);
 void help();
 void menu();
-void error();
+void error1();
