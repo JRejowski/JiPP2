@@ -1,6 +1,6 @@
-
 #include <iostream>
-#include "../include/calc.h"
+
+using namespace std;
 
 int add(int a, int b)
 {
@@ -12,20 +12,24 @@ int subtract(int a, int b)
     return a - b;
 }
 
-double volume(double base_field, double h)
+double volume(int a, int b, int h)
 {
-    return base_field*h;
+    return ((a+b)/2.)*h;
 }
 void help()
 {
-   std::cout<<"SimpleCalc [kind of operation] [parameter] [parameter]\n\tAvailable actions:\n 1.Adding (add [a] [b])\n 2.Subtraction (subtract ([a] [b])\n 3.Prismatic V prism (volume ([base_field] [h])"<<std::endl;
+    cout<<"Simple calculator"<<endl;
+    cout<<"Available actions:"<<endl;
+    cout<<"add [a] [b] - Add two integers"<<endl;
+    cout<<"subtract [a] [b] - Subtract two integers"<<endl;
+    cout<<"volume [a] [b] [h] - Volume of simple prism with trapeze as an base, [a] and [b] are the bases of trapeze and [h] is trapeze's height "<<endl;
+    cout<<"help - show documentation"<<endl;
+
 }
 
-void menu()
+
+void error()
 {
-    std::cout<<"Simple Calculator \n 1.Adding (add [a] [b])\n 2.Subtraction (subtract ([a] [b])\n 3.Prismatic V prism (volume ([base_field] [h])\n 4.help"<<std::endl;
-}
-void error1()
-{
-    std::cout<<"Wrong data, try again"<<std::endl;
+    cout<<"Wrong data, try again"<<endl;
+    help();
 }
