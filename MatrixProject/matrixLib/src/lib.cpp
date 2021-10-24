@@ -75,28 +75,42 @@ double **subtractMatrix(double **a, double **b, int rows, int columns)
     return w;
 }
 
-int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2)
+int **multiplyByScalar(int **a, int rows, int columns, int scalar)
 {
     int **w = new int *[rows];
 
     for (int i = 0; i <rows ; ++i) {
-        w[i] = new int[columns2];
+        w[i] = new int[columns];
     }
-
-
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<columns;j++)
+        {
+            w[i][j]=scalar*a[i][j];
+        }
+    }
     return w;
+
 }
 
-double **multiplyMatrix(double **a, double **b, int rows, int columns, int columns2)
+double **multiplyByScalar(double **a, int rows, int columns, double scalar)
 {
     double **w = new double *[rows];
 
     for (int i = 0; i <rows ; ++i) {
-        w[i] = new double[columns2];
+        w[i] = new double[columns];
     }
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<columns;j++)
+        {
+            w[i][j]=scalar*a[i][j];
 
+        }
+    }
     return w;
 }
+
 
 
 
