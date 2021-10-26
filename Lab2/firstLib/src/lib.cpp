@@ -2,6 +2,6 @@
 
 void itIsWork()
 {
-    cout<<"Yes it work!"<<endl;
+    cout<<"Yes it works!"<<endl;
 }
 
