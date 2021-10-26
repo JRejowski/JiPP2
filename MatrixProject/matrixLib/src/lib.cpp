@@ -167,6 +167,22 @@ void sortRow(double *a, int columns)
     }
 }
 
+void sortRowsInMatrix(int **a, int rows, int columns)
+{
+    for(int i=0;i<rows;++i)
+    {
+        sortRow(a[i],columns);
+    }
+}
+
+void sortRowsInMatrix(double **a, int rows, int columns)
+{
+    for(int i=0;i<rows;++i)
+    {
+        sortRow(a[i],columns);
+    }
+}
+
 
 
 

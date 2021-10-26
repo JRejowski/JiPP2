@@ -47,9 +47,9 @@ void sortRow(int *a, int columns);
 
 void sortRow(double *a, int columns);
 
-int sortRowsInMatrix(int **a, int rows, int columns);
+void sortRowsInMatrix(int **a, int rows, int columns);
 
-double sortRowsInMatrix(double **a, int rows, int columns);
+void sortRowsInMatrix(double **a, int rows, int columns);
 
 
 #endif //JIPP2_LIB_H
