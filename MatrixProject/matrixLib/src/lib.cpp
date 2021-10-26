@@ -116,3 +116,6 @@ double **multiplyByScalar(double **a, int rows, int columns, double scalar)
 
 
 
+
+
+

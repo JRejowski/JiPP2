@@ -4,4 +4,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(include)
 
-add_library(matrixLibLib STATIC src/lib.cpp ../matrixApp/src/main.cpp)
+add_library(matrixLib STATIC src/lib.cpp ../matrixApp/src/main.cpp)

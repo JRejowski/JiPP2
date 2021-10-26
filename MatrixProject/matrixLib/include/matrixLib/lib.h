@@ -27,8 +27,29 @@ int transpozeMatrix(int **a, int rows, int columns);
 
 double transpozeMatrix(double **a, int rows, int columns);
 
-int powerMatrix(int **a, int rows, int columns, unsigned degree)
+int powerMatrix(int **a, int rows, int columns, unsigned degree);
 
+double powerMatrix(double **a, int rows, int columns, unsigned degree);
+
+int determinantMatrix(int **a, int rows, int columns);
+
+double determinantMatrix(double **a, int rows, int columns);
+
+bool matrixIsDiagonal(int **a, int rows, int columns);
+
+bool matrixIsDiagonal(double **a, int rows, int columns);
+
+void swap(int &a, int &b);
+
+void swap(double &a, double &b);
+
+int sortRow(int *a, int columns);
+
+double sortRow(double *a, int columns);
+
+int sortRowsInMatrix(int **a, int rows, int columns);
+
+double sortRowsInMatrix(double **a, int rows, int columns);
 
 
 #endif //JIPP2_LIB_H
