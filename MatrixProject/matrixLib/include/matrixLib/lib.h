@@ -43,9 +43,9 @@ void swap(int &a, int &b);
 
 void swap(double &a, double &b);
 
-int sortRow(int *a, int columns);
+void sortRow(int *a, int columns);
 
-double sortRow(double *a, int columns);
+void sortRow(double *a, int columns);
 
 int sortRowsInMatrix(int **a, int rows, int columns);
 

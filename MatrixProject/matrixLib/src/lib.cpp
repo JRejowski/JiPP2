@@ -75,6 +75,21 @@ double **subtractMatrix(double **a, double **b, int rows, int columns)
     return w;
 }
 
+int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2)
+{
+    int cellValue=0;
+    int **w = new int *[rows];
+    for (int i=0; i<rows;++i)
+    {
+        w[i] = new int [columns2];
+    }
+
+    return w;
+    //UNFINISHED//
+}
+
+
+
 int **multiplyByScalar(int **a, int rows, int columns, int scalar)
 {
     int **w = new int *[rows];
@@ -111,7 +126,46 @@ double **multiplyByScalar(double **a, int rows, int columns, double scalar)
     return w;
 }
 
+void swap(int &a, int &b)
+{
+    int tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+}
 
+void swap(double &a, double &b)
+{
+    double tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+}
+
+void sortRow(int *a, int columns)
+{
+    for(int i=0;i<columns;++i)
+    {
+        for(int j=0;i<columns-i;j++)
+        {
+            if(a[j-1]>a[j])
+            {
+                swap(a[j-1],a[j]);
+            }
+        }
+    }
+}
+
+void sortRow(double *a, int columns)
+{
+    for (int i = 0; i < columns; ++i) {
+        for (int j = 0; i < columns - i; j++) {
+            if (a[j - 1] > a[j]) {
+                swap(a[j - 1], a[j]);
+            }
+        }
+    }
+}
 
 
 
