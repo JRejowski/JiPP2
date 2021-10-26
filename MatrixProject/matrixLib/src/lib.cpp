@@ -75,7 +75,7 @@ double **subtractMatrix(double **a, double **b, int rows, int columns)
     return w;
 }
 
-int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2)
+/*int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2)
 {
     int cellValue=0;
     int **w = new int *[rows];
@@ -87,7 +87,7 @@ int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2)
     return w;
     //UNFINISHED//
 }
-
+*/
 
 
 int **multiplyByScalar(int **a, int rows, int columns, int scalar)
@@ -125,6 +125,33 @@ double **multiplyByScalar(double **a, int rows, int columns, double scalar)
     }
     return w;
 }
+
+bool matrixIsDiagonal(int **a, int rows, int columns)
+{
+    for(int i=0;i<rows;++i)
+    {
+        for(int j=0;j<columns;++j)
+        {
+            if(i!=j && a[i][j]!=0)
+                return false;
+        }
+    }
+    return true;
+}
+
+bool matrixIsDiagonal(double **a, int rows, int columns)
+{
+    for(int i=0;i<rows;++i)
+    {
+        for(int j=0;j<columns;++j)
+        {
+            if(i!=j && a[i][j]!=0)
+                return false;
+        }
+    }
+    return true;
+}
+
 
 void swap(int &a, int &b)
 {
