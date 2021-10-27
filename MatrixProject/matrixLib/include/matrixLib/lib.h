@@ -23,13 +23,13 @@ int **multiplyByScalar(int **a, int rows, int columns, int scalar);
 
 double **multiplyByScalar(double **a, int rows, int columns, double scalar);
 
-int transpozeMatrix(int **a, int rows, int columns);
+int **transpozeMatrix(int **a, int rows, int columns);
 
-double transpozeMatrix(double **a, int rows, int columns);
+double **transpozeMatrix(double **a, int rows, int columns);
 
-int powerMatrix(int **a, int rows, int columns, unsigned degree);
+int **powerMatrix(int **a, int rows, int columns, unsigned degree);
 
-double powerMatrix(double **a, int rows, int columns, unsigned degree);
+double **powerMatrix(double **a, int rows, int columns, unsigned degree);
 
 int determinantMatrix(int **a, int rows, int columns);
 
