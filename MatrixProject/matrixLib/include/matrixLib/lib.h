@@ -18,6 +18,8 @@ using namespace std;
 
 int **addMatrix(int **a, int **b, int rows, int columns);
 double **addMatrix(double **a, double **b, int rows, int columns);
+double** addMatrix(double** a, int** b, int rows, int columns);
+double** addMatrix(int** a, double** b, int rows, int columns);
 
 
 /**
@@ -30,6 +32,8 @@ double **addMatrix(double **a, double **b, int rows, int columns);
  */
 int **subtractMatrix(int **a, int **b, int rows, int columns);
 double **subtractMatrix(double **a, double **b, int rows, int columns);
+double **subtractMatrix(int **a, double **b, int rows, int columns);
+double **subtractMatrix(double**a, int **b, int rows, int columns);
 
 /**
  * Multiply matrix a by matrix b
@@ -42,7 +46,8 @@ double **subtractMatrix(double **a, double **b, int rows, int columns);
  */
 int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2);
 double **multiplyMatrix(double **a, double **b, int rows, int columns, int columns2);
-
+double **multiplyMatrix(int **a, double **b, int rows, int columns, int columns2);
+double **multiplyMatrix(double **a, int **b, int rows, int columns, int columns2);
 /**
  * Multiply matrix a by a scalar
  * @param a matrix a

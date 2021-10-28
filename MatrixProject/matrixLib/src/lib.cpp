@@ -23,7 +23,7 @@ int **addMatrix(int **a, int **b, int rows, int columns)
 
 double **addMatrix(double **a, double **b, int rows, int columns)
 {
-    double **w = new double *[rows];
+    auto **w = new double *[rows];
 
     for (int i = 0; i <rows ; ++i) {
         w[i] = new double[columns];
@@ -38,6 +38,44 @@ double **addMatrix(double **a, double **b, int rows, int columns)
     }
     return w;
 }
+
+double** addMatrix(double** a, int** b, int rows, int columns)
+{
+    auto **w = new double *[rows];
+
+    for (int i = 0; i <rows ; ++i) {
+        w[i] = new double[columns];
+    }
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<columns;j++)
+        {
+            w[i][j]=a[i][j]+b[i][j];
+
+        }
+    }
+    return w;
+}
+
+double** addMatrix(int** a, double** b, int rows, int columns)
+{
+    auto **w = new double *[rows];
+
+    for (int i = 0; i <rows ; ++i) {
+        w[i] = new double[columns];
+    }
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<columns;j++)
+        {
+            w[i][j]=a[i][j]+b[i][j];
+
+        }
+    }
+    return w;
+}
+
+//////////////////////////////////////////////////////////////////////////
 
 int **subtractMatrix(int **a, int **b, int rows, int columns)
 {
@@ -59,7 +97,7 @@ int **subtractMatrix(int **a, int **b, int rows, int columns)
 
 double **subtractMatrix(double **a, double **b, int rows, int columns)
 {
-    double **w = new double *[rows];
+    auto **w = new double *[rows];
 
     for (int i = 0; i <rows ; ++i) {
         w[i] = new double[columns];
@@ -74,6 +112,44 @@ double **subtractMatrix(double **a, double **b, int rows, int columns)
     }
     return w;
 }
+
+double **subtractMatrix(int **a, double **b, int rows, int columns)
+{
+    auto **w = new double *[rows];
+
+    for (int i = 0; i <rows ; ++i) {
+        w[i] = new double[columns];
+    }
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<columns;j++)
+        {
+            w[i][j]=a[i][j]-b[i][j];
+
+        }
+    }
+    return w;
+}
+
+double **subtractMatrix(double **a, int **b, int rows, int columns)
+{
+    auto **w = new double *[rows];
+
+    for (int i = 0; i <rows ; ++i) {
+        w[i] = new double[columns];
+    }
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<columns;j++)
+        {
+            w[i][j]=a[i][j]-b[i][j];
+
+        }
+    }
+    return w;
+}
+
+////////////////////////////////////////////////////////////////////////////////
 
 int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2)
 {
@@ -100,7 +176,7 @@ int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2)
 
 double **multiplyMatrix(double **a, double **b, int rows, int columns, int columns2) {
 
-    double **w = new double *[rows];
+    auto **w = new double *[rows];
     for (int i = 0; i < rows; ++i) {
         w[i] = new double[columns2];
     }
@@ -115,6 +191,44 @@ double **multiplyMatrix(double **a, double **b, int rows, int columns, int colum
     }
     return w;
 }
+
+double **multiplyMatrix(int **a, double **b, int rows, int columns, int columns2)
+{
+    auto **w = new double *[rows];
+    for (int i = 0; i < rows; ++i) {
+        w[i] = new double[columns2];
+    }
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns2; j++) {
+            w[i][j] = 0;
+            for (int k = 0; k < columns; k++) {
+                w[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+    return w;
+}
+
+double **multiplyMatrix(double **a, int **b, int rows, int columns, int columns2)
+{
+    auto **w = new double *[rows];
+    for (int i = 0; i < rows; ++i) {
+        w[i] = new double[columns2];
+    }
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns2; j++) {
+            w[i][j] = 0;
+            for (int k = 0; k < columns; k++) {
+                w[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+    return w;
+}
+
+///////////////////////////////////////////////////////////////////////////////
 
 int **multiplyByScalar(int **a, int rows, int columns, int scalar)
 {
@@ -136,7 +250,7 @@ int **multiplyByScalar(int **a, int rows, int columns, int scalar)
 
 double **multiplyByScalar(double **a, int rows, int columns, double scalar)
 {
-    double **w = new double *[rows];
+    auto **w = new double *[rows];
 
     for (int i = 0; i <rows ; ++i) {
         w[i] = new double[columns];
@@ -151,6 +265,8 @@ double **multiplyByScalar(double **a, int rows, int columns, double scalar)
     }
     return w;
 }
+
+/////////////////////////////////////////////////////////////////////////////
 
 int **transpozeMatrix(int **a, int rows, int columns)
 {
@@ -174,7 +290,7 @@ int **transpozeMatrix(int **a, int rows, int columns)
 
 double **transpozeMatrix(double **a, int rows, int columns)
 {
-    double **w = new double *[columns];
+    auto **w = new double *[columns];
 
     for (int i = 0; i <columns ; ++i) {
         w[i] = new double[rows];
@@ -189,6 +305,8 @@ double **transpozeMatrix(double **a, int rows, int columns)
     }
     return w;
 }
+
+//////////////////////////////////////////////////////////////////////////
 
 int **powerMatrix(int **a, int rows, int columns, unsigned degree)
 {
@@ -210,7 +328,7 @@ int **powerMatrix(int **a, int rows, int columns, unsigned degree)
 
 double **powerMatrix(double **a, int rows, int columns, unsigned degree)
 {
-    double **w = new double *[columns];
+    auto **w = new double *[columns];
 
     for (int i = 0; i <columns ; ++i)
     {
@@ -225,6 +343,8 @@ double **powerMatrix(double **a, int rows, int columns, unsigned degree)
     }
     return w;
 }
+
+///////////////////////////////////////////////////////////////////
 
 int determinantMatrix(int **a, int rows, int columns)
 {
@@ -279,7 +399,7 @@ double determinantMatrix(double **a, int rows, int columns)
     {
         return (a[0][0]*a[1][1])-(a[0][1]*a[1][0]);
     }
-    double **w = new double *[rows];
+    auto **w = new double *[rows];
 
     for (int i = 0; i <rows ; ++i) {
         w[i] = new double[columns];
@@ -311,6 +431,7 @@ double determinantMatrix(double **a, int rows, int columns)
     return determinant;
 }
 
+//////////////////////////////////////////////////////////////////////////////////////
 
 bool matrixIsDiagonal(int **a, int rows, int columns)
 {
@@ -338,6 +459,7 @@ bool matrixIsDiagonal(double **a, int rows, int columns)
     return true;
 }
 
+////////////////////////////////////////////////////////////////////
 
 void swap(int &a, int &b)
 {
@@ -354,6 +476,8 @@ void swap(double &a, double &b)
     a = b;
     b = tmp;
 }
+
+///////////////////////////////////////////////////////
 
 void sortRow(int *a, int columns)
 {
@@ -380,6 +504,8 @@ void sortRow(double *a, int columns)
     }
 }
 
+//////////////////////////////////////////////////////////////
+
 void sortRowsInMatrix(int **a, int rows, int columns)
 {
     for(int i=0;i<rows;++i)
@@ -395,10 +521,3 @@ void sortRowsInMatrix(double **a, int rows, int columns)
         sortRow(a[i],columns);
     }
 }
-
-
-
-
-
-
-
