@@ -201,7 +201,7 @@ int **powerMatrix(int **a, int rows, int columns, unsigned degree)
 
     w=a;
 
-    for(int i=1;i<degree;++i)
+    for(unsigned i=1;i<degree;++i)
     {
         w= multiplyMatrix(w,a,rows,columns,columns);
     }
@@ -219,11 +219,96 @@ double **powerMatrix(double **a, int rows, int columns, unsigned degree)
 
     w=a;
 
-    for(int i=1;i<degree;++i)
+    for(unsigned i=1;i<degree;++i)
     {
         w= multiplyMatrix(w,a,rows,columns,columns);
     }
     return w;
+}
+
+int determinantMatrix(int **a, int rows, int columns)
+{
+    int determinant = 0;
+    if(rows == 1)
+    {
+        return a[0][0];
+    }
+    if(rows == 2)
+    {
+        return (a[0][0]*a[1][1])-(a[0][1]*a[1][0]);
+    }
+    int **w = new int *[rows];
+
+    for (int i = 0; i <rows ; ++i) {
+        w[i] = new int[columns];
+    }
+    int sign = 1;
+
+    for(int i=0; i<columns; ++i)
+    {
+        int j=0;
+        for(int k = 0; k<rows; k++)
+        {
+            for(int l = 0; l<columns; l++)
+            {
+
+                if (k != 0 && l !=i)
+                {
+                    w[i][j++] = a[k][l];
+                    if(j == rows -1)
+                    {
+                        j=0;
+                        i++;
+                    }
+                }
+            }
+        }
+        determinant += sign* a[0][i] * determinantMatrix(w,rows-1,rows-1);
+        sign = -sign;
+    }
+    return determinant;
+}
+double determinantMatrix(double **a, int rows, int columns)
+{
+    double determinant = 0;
+    if(rows == 1)
+    {
+        return a[0][0];
+    }
+    if(rows == 2)
+    {
+        return (a[0][0]*a[1][1])-(a[0][1]*a[1][0]);
+    }
+    double **w = new double *[rows];
+
+    for (int i = 0; i <rows ; ++i) {
+        w[i] = new double[columns];
+    }
+    double sign = 1.;
+
+    for(int i=0; i<columns; ++i)
+    {
+        int j=0;
+        for(int k = 0; k<rows; k++)
+        {
+            for(int l = 0; l<columns; l++)
+            {
+
+                if (k != 0 && l !=i)
+                {
+                    w[i][j++] = a[k][l];
+                    if(j == rows -1)
+                    {
+                        j=0;
+                        i++;
+                    }
+                }
+            }
+        }
+        determinant += sign* a[0][i] * determinantMatrix(w,rows-1,rows-1);
+        sign = -sign;
+    }
+    return determinant;
 }
 
 
