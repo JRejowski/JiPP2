@@ -8,117 +8,140 @@
 using namespace std;
 
 /**
+ * Lists all of possible actions (show documentation)
+ */
+void help();
+
+
+/**
+ * Function to print matrix
+ * @param matrix given matrix
+ * @param rows number of rows in matrix
+ * @param columns number of columns in matrix
+ */
+void printMatrix(int **matrix, int rows, int columns);
+void printMatrix(double **matrix, int rows, int columns);
+
+/**
+ * Simple function to delete matrix
+ * @param matrix matrix that you want to delete
+ * @param rows number of rows in given matrix
+ */
+void deleteMatrix(int **matrix, int rows);
+void deleteMatrix(double **matrix, int rows);
+
+/**
  * Adds two martices together
  * !Important! Matrices must be same size!
- * @param a first matrix
- * @param b second matrix
+ * @param matrix1 first matrix
+ * @param matrix2 second matrix
  * @param rows number of rows in matrices
  * @param columns number of columns in matrices
  */
-
-int **addMatrix(int **a, int **b, int rows, int columns);
-double **addMatrix(double **a, double **b, int rows, int columns);
-double** addMatrix(double** a, int** b, int rows, int columns);
-double** addMatrix(int** a, double** b, int rows, int columns);
+int **addMatrix(int **matrix1, int **matrix2, int rows, int columns);
+double **addMatrix(double **matrix1, double **matrix2, int rows, int columns);
+double** addMatrix(double** matrix1, int** matrix2, int rows, int columns);
+double** addMatrix(int** matrix1, double** matrix2, int rows, int columns);
 
 
 /**
- * Subtract matrix b from matrix a
+ * Subtract one matrix(matrix2) from another matrix(matrix1)
  * !Important! Matrices must be same size!
- * @param a first matrix
- * @param b second matrix
+ * @param matrix1 first matrix
+ * @param matrix2 second matrix
  * @param rows number of rows in matrices
  * @param columns  number of columns in matrices
  */
-int **subtractMatrix(int **a, int **b, int rows, int columns);
-double **subtractMatrix(double **a, double **b, int rows, int columns);
-double **subtractMatrix(int **a, double **b, int rows, int columns);
-double **subtractMatrix(double**a, int **b, int rows, int columns);
+int **subtractMatrix(int **matrix1, int **matrix2, int rows, int columns);
+double **subtractMatrix(double **matrix1, double **matrix2, int rows, int columns);
+double **subtractMatrix(int **matrix1, double **matrix2, int rows, int columns);
+double **subtractMatrix(double**matrix1, int **matrix2, int rows, int columns);
 
 /**
- * Multiply matrix a by matrix b
- * !Important! Number of rows in matrix a must be equal to matrix's b columns number
- * @param a first matrix
- * @param b second matrix
- * @param rows number of rows in matrix a
- * @param columns number of columns in matrix a
- * @param columns2 number of columns in matrix b
+ * Multiply first matrix by second matrix
+ * !Important! Number of rows in first matrix must be equal to second matrix's columns number
+ * @param matrix1 first matrix
+ * @param matrix2 second matrix
+ * @param rows number of rows in first matrix
+ * @param columns number of columns in first matrix
+ * @param columns2 number of columns in second matrix
  */
-int **multiplyMatrix(int **a, int **b, int rows, int columns, int columns2);
-double **multiplyMatrix(double **a, double **b, int rows, int columns, int columns2);
-double **multiplyMatrix(int **a, double **b, int rows, int columns, int columns2);
-double **multiplyMatrix(double **a, int **b, int rows, int columns, int columns2);
+int **multiplyMatrix(int **matrix1, int **matrix2, int rows, int columns, int columns2);
+double **multiplyMatrix(double **matrix1, double **matrix2, int rows, int columns, int columns2);
+double **multiplyMatrix(int **matrix1, double **matrix2, int rows, int columns, int columns2);
+double **multiplyMatrix(double **matrix1, int **matrix2, int rows, int columns, int columns2);
 /**
- * Multiply matrix a by a scalar
- * @param a matrix a
+ * Multiply matrix by a scalar
+ * @param matrix given matrix
  * @param rows number of rows in matrix
  * @param columns number of columns in matrix
  * @param scalar value of a scalar by which the matrix will be multiplied
  */
-int **multiplyByScalar(int **a, int rows, int columns, int scalar);
-double **multiplyByScalar(double **a, int rows, int columns, double scalar);
+int **multiplyByScalar(int **matrix, int rows, int columns, int scalar);
+double **multiplyByScalar(double **matrix, int rows, int columns, double scalar);
 
 /**
- * Transpozing of matrix a
- * @param a matrix a
+ * Transpozing of given matrix
+ * @param matrix given matrix
  * @param rows number of matrix's rows
  * @param columns number of matrix's columns
  */
-int **transpozeMatrix(int **a, int rows, int columns);
-double **transpozeMatrix(double **a, int rows, int columns);
+int **transpozeMatrix(int **matrix, int rows, int columns);
+double **transpozeMatrix(double **matrix, int rows, int columns);
 
 /**
  * Powers the given matrix to given degree
- * @param a matrix a
+ * @param matrix given matrix
  * @param rows number of matrix's rows
  * @param columns number of matrix's columns
  * @param degree degree to which the matrix will be powered
  */
-int **powerMatrix(int **a, int rows, int columns, unsigned degree);
-double **powerMatrix(double **a, int rows, int columns, unsigned degree);
+int **powerMatrix(int **matrix, int rows, int columns, unsigned degree);
+double **powerMatrix(double **matrix, int rows, int columns, unsigned degree);
 
 /**
  * Calculates the determinant of given matrix
- * @param a matrix a
+ * !Important! Numbers of rows and columns in matrix must be equal!
+ * @param matrix given matrix
  * @param rows number of rows in matrix
  * @param columns number of columns in matrix
  */
-int determinantMatrix(int **a, int rows, int columns);
-double determinantMatrix(double **a, int rows, int columns);
+int determinantMatrix(int **matrix, int rows, int columns);
+double determinantMatrix(double **matrix, int rows, int columns);
 
 /**
  * Checks whether the matrix is Diagonal or not
- * @param a matrix a
+ * @param matrix given matrix
  * @param rows number of rows in matrix
  * @param columns number of columns in matrix
  */
-bool matrixIsDiagonal(int **a, int rows, int columns);
-bool matrixIsDiagonal(double **a, int rows, int columns);
+bool matrixIsDiagonal(int **matrix, int rows, int columns);
+bool matrixIsDiagonal(double **matrix, int rows, int columns);
 
 /**
  * Swaps the values of two given variables
- * @param a variable a
- * @param b variable b
+ * @param a first variable
+ * @param b second variable
  */
 void swap(int &a, int &b);
 void swap(double &a, double &b);
 
 /**
  * Sorts an array using bubble sort
- * @param a array a
+ * @param array given array
  * @param columns number of elements in array
  */
-void sortRow(int *a, int columns);
-void sortRow(double *a, int columns);
+void sortRow(int *array, int columns);
+void sortRow(double *array, int columns);
 
 /**
- * Sort each row in a matrix
- * @param a matrix a
+ * Sort each row in a matrix using bubble sort
+ * @param matrix given matrix
  * @param rows number of rows in matrix
  * @param columns number of columns in matrix
  */
-void sortRowsInMatrix(int **a, int rows, int columns);
-void sortRowsInMatrix(double **a, int rows, int columns);
+void sortRowsInMatrix(int **matrix, int rows, int columns);
+void sortRowsInMatrix(double **matrix, int rows, int columns);
 
 
 #endif //JIPP2_LIB_H
