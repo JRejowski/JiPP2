@@ -14,4 +14,4 @@ add_subdirectory(MatrixProject/matrixApp)
 
 add_subdirectory(Lab3/firstClass)
 
-add_subdirectory(Lab3/classesExercise)
+add_subdirectory(Lab3/structExercise)
