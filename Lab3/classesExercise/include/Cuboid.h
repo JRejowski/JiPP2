@@ -5,11 +5,18 @@
 #ifndef JIPP2_CUBOIDAREA_H
 #define JIPP2_CUBOIDAREA_H
 
+using namespace std;
 
 class Cuboid {
 
 private:
-    double a,b,h;
+    double width;
+    double length;
+    double height;
+
+public:
+    Cuboid(double width, double length, double heigth);
+    double countArea();
 
 };
 
