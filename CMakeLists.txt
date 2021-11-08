@@ -17,3 +17,7 @@ add_subdirectory(Lab3/firstClass)
 add_subdirectory(Lab3/structExercise)
 
 add_subdirectory(Lab3/classesExercise)
+
+add_subdirectory(Lab5/e1NoCopyingConstructor)
+
+add_subdirectory(Lab5/Homework1.2)
