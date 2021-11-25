@@ -3,6 +3,8 @@
 //
 
 #include "Point.h"
+#include "../../../Lab4/classesExercise/include/Point.h"
+
 
 Point::Point(double x, double y, string name) : name(name) {
     *this->x = x;
@@ -65,3 +67,5 @@ Point::Point(Point &point) {
     *x = *point.x;
     *y = *point.y;
 }
+
+
