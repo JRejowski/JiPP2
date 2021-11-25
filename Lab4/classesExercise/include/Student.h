@@ -20,6 +20,19 @@ private:
 public:
     Student(string name, string surname, int albumNumber, int questionsNumber, int correctAnswers);
     double howManyGoodAnswers();
+
+    string getName();
+    string getSurname();
+    int getAlbumNumber();
+    int getQuestionsNumber();
+    int getCorrectAnswers();
+
+    void setName(string name);
+    void setSurname(string surname);
+    void setAlbumNumber(int albumNumber);
+    void setQuestionsNumber(int questionsNumber);
+    void setCorrectAnswers(int correctAnswers);
+
 };
 
 

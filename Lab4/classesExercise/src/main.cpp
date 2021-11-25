@@ -16,6 +16,8 @@ int main()
     QuadraticFunction q1(2,4,6);
     Student st1("Jan","Kowalski",1829302123,20,12);
 
+
+
     cout<<c1.countArea()<<endl;
     cout<<s1.countVolume()<<endl;
     q1.showFunction();

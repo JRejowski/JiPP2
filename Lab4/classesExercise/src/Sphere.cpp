@@ -14,3 +14,10 @@ double Sphere::countVolume() {
     return (4./3.)*3.14*(radius*radius*radius);
 }
 
+double Sphere::getRadius() {
+    return radius;
+}
+
+void Sphere::setRadius(double radius) {
+    this->radius = radius;
+}

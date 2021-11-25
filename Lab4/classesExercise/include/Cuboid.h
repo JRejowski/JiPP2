@@ -18,6 +18,15 @@ public:
     Cuboid(double width, double length, double heigth);
     double countArea();
 
+    double getWidth();
+    double getLength();
+    double getHeight();
+
+    void setWidth(double width);
+    void setLength(double length);
+    void setHeight(double height);
+
+
 };
 
 

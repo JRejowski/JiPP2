@@ -14,6 +14,9 @@ public:
     Sphere(double radius);
 
     double countVolume();
+
+    double getRadius();
+    void setRadius(double radius);
 };
 
 
