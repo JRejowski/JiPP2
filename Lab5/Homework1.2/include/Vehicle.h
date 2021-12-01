@@ -15,13 +15,24 @@ private:
     string registerPlate;
     string name;
     int numberOfSeats;
-    string *passengers = new string[numberOfSeats];
+    string *passengers;
     string brand;
     string type;
 public:
     void showData();
-    Vehicle(string registerPlate, string name, int numberOfSeats,string brand, string type);
+    void newPassenger(int place, string name);
 
+    Vehicle(string registerPlate, string name, int numberOfSeats,string brand, string type);
+    Vehicle(Vehicle &vehicle);
+
+
+    void setName(string name);
+    void setRegisterPlate(string registerPlate);
+
+    string getName();
+    string getRegisterPlate();
+    string getBrand();
+    string getType();
 };
 
 
