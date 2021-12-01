@@ -17,3 +17,8 @@ Rectangle::Rectangle(string name, string color, double a, double b):a(a),b(b){
     this->color;
 }
 
+void Rectangle::printRectangleData() {
+    cout<<"Name: "<<getName()<<" Color: "<<getColor()<<" a: "<<a<<" b: "<<b;
+
+}
+

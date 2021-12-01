@@ -13,6 +13,7 @@ public:
     Rectangle(string name, string color, double a, double b);
     double area();
     double circuit();
+    void printRectangleData();
 
 };
 

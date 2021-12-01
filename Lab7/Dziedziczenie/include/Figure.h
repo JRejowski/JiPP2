@@ -12,7 +12,8 @@ protected:
     string name;
     string color;
 public:
-
+    string getName();
+    string getColor();
 
 };
 
