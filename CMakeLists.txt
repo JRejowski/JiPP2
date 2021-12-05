@@ -5,4 +5,4 @@ add_subdirectory(MatrixProject/matrixLib)
 
 add_subdirectory(MatrixProject/matrixApp)
 
-add_subdirectory(Lab5/Homework1.2)
+add_subdirectory(Lab3)
