@@ -4,4 +4,4 @@ project(firstClass)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(firstClass src/main.cpp src/MyFirstClass.cpp include/MyFirstClass.h ../../Lab3/structExercise/src/main.cpp)
+add_executable(firstClass src/main.cpp src/MyFirstClass.cpp include/MyFirstClass.h ../structExercise/src/main.cpp)

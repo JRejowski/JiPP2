@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Lab6/operatorsExercises/include/Vector.h
+iostream
+-
+math.h
+-
+
+C:/Users/Admin/CLionProjects/JiPP2/Lab6/operatorsExercises/src/main.cpp
+iostream
+-
+Vector.h
+C:/Users/Admin/CLionProjects/JiPP2/Lab6/operatorsExercises/src/Vector.h
+

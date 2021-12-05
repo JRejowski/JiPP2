@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="firstLibCall"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Lab6\;CMake Files\Lab6\Code\;CMake Files\Lab6\operatorsExercises\;CMake Files\Lab5\;CMake Files\Lab5\Homework1.2\;CMake Files\Lab5\e1NoCopyingConstructor\;CMake Files\Lab1\;CMake Files\Lab1\allocation_basics\;CMake Files\Lab1\simpleCalc\;CMake Files\Lab2\;CMake Files\Lab2\firstLib\;CMake Files\Lab2\firstLibCall\;CMake Files\MatrixProject\;CMake Files\MatrixProject\matrixLib\;CMake Files\MatrixProject\matrixApp\;CMake Files\Lab3\;CMake Files\Lab3\firstClass\;CMake Files\Lab3\structExercise\;CMake Files\Lab3\classesExercise\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Admin/CLionProjects/JiPP2/cmake-build-debug/Lab2/firstLibCall"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="firstLibCall">
+				<Option output="C:/Users/Admin/CLionProjects/JiPP2/cmake-build-debug/Lab2/firstLibCall/firstLibCall.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Admin/CLionProjects/JiPP2/cmake-build-debug/Lab2/firstLibCall"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Admin/CLionProjects/JiPP2/firstLib/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 firstLibCall"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="firstLibCall/fast">
+				<Option output="C:/Users/Admin/CLionProjects/JiPP2/cmake-build-debug/Lab2/firstLibCall/firstLibCall.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Admin/CLionProjects/JiPP2/cmake-build-debug/Lab2/firstLibCall"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Admin/CLionProjects/JiPP2/firstLib/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 firstLibCall/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Admin\CLionProjects\JiPP2\cmake-build-debug\Lab2\firstLibCall\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab2/firstLibCall/src/main.cpp">
+			<Option target="firstLibCall"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab6/Code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab6\Code\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab6/operatorsExercises/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab6\operatorsExercises\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab5/Homework1.2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab5\Homework1.2\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab5/e1NoCopyingConstructor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab5\e1NoCopyingConstructor\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab1/allocation_basics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab1\allocation_basics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab1/simpleCalc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab1\simpleCalc\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab2/firstLib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab2\firstLib\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab2/firstLibCall/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab2\firstLibCall\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/MatrixProject/matrixLib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MatrixProject\matrixLib\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/MatrixProject/matrixApp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MatrixProject\matrixApp\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab3/firstClass/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab3\firstClass\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab3/structExercise/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab3\structExercise\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/JiPP2/Lab3/classesExercise/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lab3\classesExercise\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

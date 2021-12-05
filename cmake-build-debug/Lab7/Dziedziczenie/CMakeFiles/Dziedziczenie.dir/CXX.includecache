@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Admin/CLionProjects/JiPP2/Lab7/Dziedziczenie/include/Figure.h
+iostream
+-
+string
+-
+
+C:/Users/Admin/CLionProjects/JiPP2/Lab7/Dziedziczenie/src/Figure.cpp
+../include/Figure.h
+C:/Users/Admin/CLionProjects/JiPP2/Lab7/Dziedziczenie/include/Figure.h
+

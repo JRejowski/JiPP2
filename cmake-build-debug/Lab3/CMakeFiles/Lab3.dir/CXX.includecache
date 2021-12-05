@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Lab3/include/func3.h
+
+C:/Users/Admin/CLionProjects/JiPP2/Lab3/src/func3.cpp
+func3.h
+C:/Users/Admin/CLionProjects/JiPP2/Lab3/src/func3.h
+stdlib.h
+-
+
