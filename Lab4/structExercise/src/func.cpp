@@ -3,6 +3,8 @@
 //
 #include <iostream>
 #include <string>
+#include <func3.h>
+
 #include "../include/func.h"
 
 using namespace std;
