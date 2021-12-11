@@ -75,7 +75,7 @@ void Vehicle::upgradeOs() {
 }
 
 void Vehicle::showOsVersion() {
-    cout<<"This vehicle Os Version is: "<<installedOsVersion;
+    cout<<"This vehicle Os Version is: "<<installedOsVersion<<endl;
 }
 
 void Vehicle::postNewOs(int x) {
