@@ -4,6 +4,8 @@
 #include <iostream>
 #include "../include/Vehicle.h"
 
+long Vehicle::newestOsVersion = 2;
+
 void Vehicle::showData() {
 
 
@@ -13,7 +15,7 @@ void Vehicle::showData() {
     {
         cout<<"Passenger "<< i+1 <<": "<<passengers[i]<<" ";
     }
-    cout<<"Brand: "<< brand << " Type: " << type<<endl;
+    cout<<"Brand: "<< brand << " Type: " << type<<" Installed Os Version: "<<installedOsVersion<<endl;
 
 }
 
@@ -21,8 +23,8 @@ void Vehicle::newPassenger(int place, string name) {
     passengers[place-1] = name;
 }
 
-Vehicle::Vehicle(string registerPlate, string name, int numberOfSeats, string brand, string type)
-:registerPlate(registerPlate),name(name),numberOfSeats(numberOfSeats),brand(brand),type(type)
+Vehicle::Vehicle(string registerPlate, string name, int numberOfSeats, string brand, string type,int installedOsVersion)
+:registerPlate(registerPlate),name(name),numberOfSeats(numberOfSeats),brand(brand),type(type),installedOsVersion(installedOsVersion)
 {
     passengers = new string[numberOfSeats];
     for(int i=0;i<numberOfSeats;i++)
@@ -44,6 +46,7 @@ Vehicle::Vehicle(Vehicle &vehicle) {
     {
     passengers[i] = vehicle.passengers[i];
     }
+    installedOsVersion = vehicle.installedOsVersion;
 }
 
 void Vehicle::setName(string name) {
@@ -66,6 +69,20 @@ string Vehicle::getBrand() {
 string Vehicle::getType() {
     return type;
 }
+
+void Vehicle::upgradeOs() {
+    this->installedOsVersion = newestOsVersion;
+}
+
+void Vehicle::showOsVersion() {
+    cout<<"This vehicle Os Version is: "<<installedOsVersion;
+}
+
+void Vehicle::postNewOs(int x) {
+    newestOsVersion = x;
+}
+
+
 
 
 
