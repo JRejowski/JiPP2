@@ -12,6 +12,7 @@ using namespace std;
 
 int main()
 {
+    /*
     double a=2;
     double b=4;
 
@@ -51,6 +52,35 @@ int main()
 
     cout<<endl;
     cout<<w;
+     */
+    int a=0;
+    int b=0;
+    int wynik=0;
+
+    try
+    {
+        cout<<"Podaj liczby do podzielenia: ";
+        cin>>a;
+        if(a<0) throw(a);
+        cin>>b;
+        if(b<0) throw(b);
+
+
+        wynik = a/b;
+        if(wynik<0) {
+            throw(wynik);
+        }
+        else
+        {
+            cout<<"Wynik dzielenia "<<a<<" / "<<b<<" = "<<wynik;
+        }
+    }
+    catch (int x)
+    {
+
+        cout<<"Zle dane";
+    }
+
 
     return 0;
 }
