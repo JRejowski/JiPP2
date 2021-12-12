@@ -11,8 +11,10 @@ class Node {
 private:
     double x, y;
     friend double pointsDistance(Node, Node);
-    friend class Triangle;
+
 public:
+    friend class Triangle;
+    friend ostream & operator<<(ostream &lhs, const Triangle &rhs);
     Node();
     Node(double x, double y);
 

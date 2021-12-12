@@ -19,8 +19,11 @@ int main()
 
     //cout<<pointsDistance(a,b);
 
-    showTriangleData(triangle);
-    showTriangleData(&t1);
+    //showTriangleData(triangle);
+    //showTriangleData(&t1);
+
+    cout<<t1<<endl;
+
     return 0;
 }
 

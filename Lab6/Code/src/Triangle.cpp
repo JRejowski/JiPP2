@@ -34,3 +34,11 @@ void showTriangleData(Triangle &triangle) {
 void showTriangleData(Triangle *triangle) {
     triangle->display();
 }
+
+ostream &operator<<(ostream &lhs, const Triangle &rhs) {
+    lhs<<"Name: "<<rhs.name<<endl;
+    lhs<<"Node 0: "<<rhs.n[0].x<<"  "<<rhs.n[0].y<<endl;
+    lhs<<"Node 1: "<<rhs.n[1].x<<"  "<<rhs.n[1].y<<endl;
+    lhs<<"Node 2: "<<rhs.n[2].x<<"  "<<rhs.n[2].y<<endl;
+    return lhs;
+}

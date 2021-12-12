@@ -13,6 +13,9 @@ private:
     string name;
 
 public:
+    friend class Node;
+    friend ostream & operator<<(ostream &lhs, const Triangle &rhs);
+
     void display();
 
     Triangle(Node n1, Node n2, Node n3, string name);
@@ -22,6 +25,8 @@ public:
 
 
 };
+
+ostream & operator<<(ostream &lhs, const Triangle &rhs);
 void showTriangleData(Triangle triangle);
 void showTriangleData(Triangle &triangle);
 void showTriangleData(Triangle *triangle);
