@@ -13,7 +13,8 @@ using namespace std;
 class Vector {
 private:
     double x, y;
-
+    friend Vector operator*(const double &lhs, const Vector &rhs);
+    friend Vector operator*(const Vector &lhs, const double &rhs);
 public:
     Vector(double x, double y);
 
@@ -29,6 +30,12 @@ public:
 
     Vector &operator-=(const Vector &rhs);
 
+    double operator*(const Vector &rhs);
+
+
 };
+
+Vector operator*(const double &lhs, const Vector &rhs);
+Vector operator*(const Vector &lhs, const double &rhs);
 
 #endif //JIPP2_VECTOR_H

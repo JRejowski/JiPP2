@@ -37,4 +37,19 @@ Vector &Vector::operator-=(const Vector &rhs) {
     return *this;
 }
 
+double Vector::operator*(const Vector &rhs) {
+    return x*rhs.x+y*rhs.y;
+}
+
+Vector operator*(const double &lhs, const Vector &rhs) {
+    return {lhs*rhs.x,lhs*rhs.y};
+}
+
+Vector operator*(const Vector &lhs, const double &rhs) {
+    return Vector(lhs.x*rhs, lhs.y*rhs);
+}
+
+
+
+
 
