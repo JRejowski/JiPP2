@@ -7,7 +7,8 @@
 
 
 class Figure1 {
-
+public:
+    virtual double getArea()=0;
 };
 
 

@@ -4,4 +4,4 @@ project(Polimorfizm)
 
 include_directories(include)
 
-add_executable(Polimorfizm src/main.cpp src/Figure1.cpp)
+add_executable(Polimorfizm src/main.cpp src/Figure1.cpp src/Circle1.cpp src/Rectangle1.cpp)
