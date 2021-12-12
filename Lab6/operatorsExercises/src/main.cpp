@@ -25,6 +25,10 @@ int main()
     v7.print();
     v8.print();
 
+    cout<<v1<<endl;
+
+    cout<<(v1==v2)<<endl;
+
 
 
 

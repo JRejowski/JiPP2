@@ -49,6 +49,19 @@ Vector operator*(const Vector &lhs, const double &rhs) {
     return Vector(lhs.x*rhs, lhs.y*rhs);
 }
 
+ostream &operator<<(ostream &lhs, const Vector &rhs) {
+    lhs<<rhs.x<<"  "<<rhs.y;
+    return lhs;
+}
+
+bool Vector::operator==(const Vector &rhs) {
+    if (x == rhs.x && y == rhs.y) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 
 

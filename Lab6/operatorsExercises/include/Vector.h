@@ -15,7 +15,11 @@ private:
     double x, y;
     friend Vector operator*(const double &lhs, const Vector &rhs);
     friend Vector operator*(const Vector &lhs, const double &rhs);
+
 public:
+
+    friend ostream & operator<<(ostream &lhs, const Vector &rhs);
+
     Vector(double x, double y);
 
     void print();
@@ -32,9 +36,13 @@ public:
 
     double operator*(const Vector &rhs);
 
+    bool operator==(const Vector &rhs);
+
+
 
 };
 
+ostream & operator<<(ostream &lhs, const Vector &rhs);
 Vector operator*(const double &lhs, const Vector &rhs);
 Vector operator*(const Vector &lhs, const double &rhs);
 
