@@ -11,6 +11,7 @@ class Node {
 private:
     double x, y;
     friend double pointsDistance(Node, Node);
+    friend class Triangle;
 public:
     Node();
     Node(double x, double y);
