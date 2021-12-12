@@ -5,8 +5,4 @@ add_subdirectory(MatrixProject/matrixLib)
 
 add_subdirectory(MatrixProject/matrixApp)
 
-add_subdirectory(Lab3)
-
-add_subdirectory(Lab6/Code)
-
-add_subdirectory(Lab6/operatorsExercises)
+add_subdirectory(Lab4/classesExercise)
