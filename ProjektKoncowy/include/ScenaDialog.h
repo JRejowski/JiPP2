@@ -13,9 +13,9 @@ using namespace std;
 
 class ScenaDialog: public Scena{
 public:
+    bool update();
     void addLine(string x);
 
-private:
     vector<string> dialog;
 
 };

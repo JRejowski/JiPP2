@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Actor.h"
 #include "ScenaWalka.h"
+#include "ScenaDialog.h"
 
 using namespace std;
 
@@ -17,7 +18,11 @@ int main()
     ScenaWalka s1;
     s1.player=&a1;
     s1.enemy=&a2;
-    while(s1.update(21)){
+    ScenaDialog s2;
+    s2.addLine("Uczen: To zwykly kij!? Dawaj zaklety miecz!");
+    s2.addLine("Stachu Jones: Jak ci zara przywale!");
+    while(s2.update())
+    {
 
     }
 

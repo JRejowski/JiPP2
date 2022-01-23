@@ -8,7 +8,7 @@
 
 class Scena {
 public:
-    virtual bool update(float)=0;
+    virtual bool update()=0;
 };
 
 

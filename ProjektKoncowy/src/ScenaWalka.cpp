@@ -100,7 +100,7 @@ bool ScenaWalka::walka(int i) {
 
 }
 
-bool ScenaWalka::update(float) {
+bool ScenaWalka::update() {
     drukujStaty();
     if (numerTury > 1) drukujRaport();
     int x=drukujOpcje();

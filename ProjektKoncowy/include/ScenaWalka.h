@@ -13,7 +13,7 @@ using namespace std;
 
 class ScenaWalka:public Scena {
 public:
-    bool update(float);
+    bool update();
     void drukujStaty();
     void drukujRaport();
     int drukujOpcje();
