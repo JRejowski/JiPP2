@@ -18,6 +18,7 @@ public:
 
     vector<string> dialog;
 
+
 };
 
 
